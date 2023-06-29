@@ -1,26 +1,17 @@
-var http = require('http');
-var fs = require('fs');
-const mqtt = require("mqtt");
-const client = mqtt.connect("mqtt://test.mosquitto.org");
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = 3000;
 
-http.createServer(function (req, res) {
-  fs.readFile('index.html', function(err, data) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    return res.end();
-  });
-}).listen(8082); 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'public'));
 
-client.on("connect", function () {
-  client.subscribe("presence", function (err) {
-    if (!err) {
-      client.publish("presence", "Hello mqtt");
-    }
-  });
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+  res.render('index'); 
 });
 
-client.on("message", function (topic, message) {
-  // message is Buffer
-  console.log(message.toString());
-  client.end();
+app.listen(port, () => {
+  console.log(`Area Explorer Dashboard listening on port ${port}`);
 });
