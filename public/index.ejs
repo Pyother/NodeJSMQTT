@@ -7,38 +7,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Area Explorer Dashboard</title>
     <script>
-      setTimeout(function() {
+      /*setTimeout(function() {
         location.reload();
-      }, 5000);
+      }, 5000);*/
     </script>
   </head>
   <body>
     <div style="display: grid;">
       <div class="frame">
-        <h1>Area Explorer Dashboard</h1>
+        <nav class="navbar bg-body-tertiary frame">
+          <img src="images/icons8-hard-to-find-50.png">
+          <h1>Area Explorer Dashboard</h1>
+          <form class="container-fluid justify-content-center" style="margin-bottom: 0.5em;">
+            <button class="btn btn-sm btn-outline-dark" type="button" style="margin-right: 0.5em; margin-left: 0.5em;">Live Detection</button>
+            <button class="btn btn-sm btn-outline-dark" type="button" style="margin-right: 0.5em; margin-left: 0.5em;">Path optimization</button>
+          </form>
+        </nav>
       </div>
       <div class="frame">
-        <p></p>
+        <div style="width: 80%; text-align: left;">
+          <h2>Recent measurements</h2>
+        </div>
       </div>
       <div class="frame">
-        <table class="table table-bordered">
-          <thead>
+        <table class="table table-striped table-bordered">
+          <thead class="table-head">
             <tr>
-              <th scope="col" style="background-color: aliceblue;">Angle 0°</th>
-              <th scope="col" style="background-color: aliceblue;">Angle 30°</th>
-              <th scope="col" style="background-color: aliceblue;">Angle 60°</th>
-              <th scope="col" style="background-color: aliceblue;">Angle 90°</th>
-              <th scope="col" style="background-color: aliceblue;">Angle 120°</th>
-              <th scope="col" style="background-color: aliceblue;">Angle 150°</th>
-              <th scope="col" style="background-color: aliceblue;">Angle 180°</th>
-              <th scope="col" style="background-color: aliceblue;">Position X</th>
-              <th scope="col" style="background-color: aliceblue;">Position Y</th>
-              <th scope="col" style="background-color: aliceblue;">Density</th>
-              <th scope="col" style="background-color: aliceblue;">Time</th>
+              <th scope="col">0°</th>
+              <th scope="col">30°</th>
+              <th scope="col">60°</th>
+              <th scope="col">90°</th>
+              <th scope="col">120°</th>
+              <th scope="col">150°</th>
+              <th scope="col">180°</th>
+              <th scope="col">Position X</th>
+              <th scope="col">Position Y</th>
+              <th scope="col">Density</th>
+              <th scope="col">Time</th>
             </tr>
           </thead>
           <tbody>
