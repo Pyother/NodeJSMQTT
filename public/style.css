@@ -22,3 +22,21 @@ p {
     justify-content: center; 
     align-items: center;
 }
+
+.table-bordered {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    .table-bordered {
+        width: 80%;
+    }
+}
+
+@media (min-width: 721px) {
+    .table-bordered {
+        width: 80%;
+    }
+}

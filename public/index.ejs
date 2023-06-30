@@ -25,18 +25,36 @@
         <p></p>
       </div>
       <div class="frame">
-        <table class="table" style="width: 50%;">
+        <table class="table table-bordered">
           <thead>
             <tr>
-              <th scope="col">Topic</th>
-              <th scope="col">Message</th>
+              <th scope="col" style="background-color: aliceblue;">Angle 0°</th>
+              <th scope="col" style="background-color: aliceblue;">Angle 30°</th>
+              <th scope="col" style="background-color: aliceblue;">Angle 60°</th>
+              <th scope="col" style="background-color: aliceblue;">Angle 90°</th>
+              <th scope="col" style="background-color: aliceblue;">Angle 120°</th>
+              <th scope="col" style="background-color: aliceblue;">Angle 150°</th>
+              <th scope="col" style="background-color: aliceblue;">Angle 180°</th>
+              <th scope="col" style="background-color: aliceblue;">Position X</th>
+              <th scope="col" style="background-color: aliceblue;">Position Y</th>
+              <th scope="col" style="background-color: aliceblue;">Density</th>
+              <th scope="col" style="background-color: aliceblue;">Time</th>
             </tr>
           </thead>
           <tbody>
             <% messages.forEach(function(message) { %>
             <tr>
-              <td><%= message.topic %></td>
-              <td><%= message.message %></td>
+              <td><%= message.degree0 %></td>
+              <td><%= message.degree30 %></td>
+              <td><%= message.degree60 %></td>
+              <td><%= message.degree90 %></td>
+              <td><%= message.degree120 %></td>
+              <td><%= message.degree150 %></td>
+              <td><%= message.degree180 %></td>
+              <td><%= message.positionx %></td>
+              <td><%= message.positiony %></td>
+              <td><%= message.density %></td>
+              <td><%= message.time %></td>
             </tr>
             <% }) %>
           </tbody>
