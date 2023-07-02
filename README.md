@@ -1,10 +1,7 @@
 # NodeJS and MQTT broker communication 
 
-To run this project forward port no. 8082 and type:
+This is a Node.js project that creates a web-based dashboard for the Area Explorer system. The dashboard displays measurements received from an MQTT broker and allows users to visualize and analyze the data.
 
-```node
-node app
-```
 
 
 
