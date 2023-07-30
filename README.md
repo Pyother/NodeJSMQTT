@@ -30,7 +30,7 @@ For Windows platforms:
 The string of characters in the message above represents each measurement: 
 
 ```
-0° 30° 60° 90° 120° 150° 180° Position_X Position_Y	Density	Time
+0° 30° 60° 90° 120° 150° 180° Position_X Position_Y Density Time
 ↓   ↓   ↓   ↓   ↓    ↓    ↓       ↓          ↓         ↓      ↓
 0   0   0   0   0    0    0       0          0         0      0   
 ```
