@@ -5,6 +5,7 @@ This is a Node.js project that creates a web-based dashboard for the Area Explor
 ## Getting started
 
 To run application clone this repository, install neccessary dependecies in the package.json directory and run application:
+This is a Node.js project that creates a web-based dashboard for the Area Explorer system. The dashboard displays measurements received from an MQTT broker and allows users to visualize and analyze the data.
 
 ```node
 npm install
